@@ -79,6 +79,6 @@ _(Tambahkan gambar tampilan LCD dan perangkat)_
 ---
 
 ## 🏆 <span style="color:#2ecc71;">Kontributor</span>
-- **[Nama Anda]** - Pengembang Utama
+- **[Muhammad Ibnu Sina]** - Pengembang Utama
 
 🚀 _Terima kasih telah mendukung proyek ini!_ Jika ada pertanyaan atau saran, silakan **buka issue atau pull request** di repository ini.

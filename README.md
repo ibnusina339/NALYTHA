@@ -1,7 +1,7 @@
-<h1 align="center">🚀 NALYTHA Project: Satellite Sculpture 🌍</h1>
+<h1 align="center">🚀 NALYTHA : Satellite Sculpture 🌍</h1>
 
 ## 📌 <span style="color:#ff5733;">Deskripsi Proyek</span>
-**<span style="color:#3498db;">NALYTHA Project</span>** adalah sebuah **pajangan meja** berbentuk **satellite sculpture** yang dilengkapi dengan **LCD TFT 2.8" Touchscreen (240x320)** dan **ESP32-S3**. Proyek ini menampilkan informasi **waktu, cuaca, dan data lingkungan** secara real-time dengan bantuan sensor **GPS NEO-8M, BMP280, dan AHT10**, serta menggunakan **LVGL** untuk tampilan antarmuka yang lebih interaktif.
+**<span style="color:#3498db;">NALYTHA</span>** adalah sebuah **pajangan meja** berbentuk **satellite sculpture** yang dilengkapi dengan **LCD TFT 2.8" Touchscreen (240x320)** dan **ESP32-S3**. Proyek ini menampilkan informasi **waktu, cuaca, dan data lingkungan** secara real-time dengan bantuan sensor **GPS NEO-8M, BMP280, dan AHT10**, serta menggunakan **LVGL** untuk tampilan antarmuka yang lebih interaktif. Sistem ini juga menggunakan **FreeRTOS** untuk manajemen multitasking yang lebih efisien.
 
 ---
 
@@ -23,6 +23,7 @@
 - 🌙 **Mode Idle**: Menampilkan data utama tanpa interaksi
 - ⚙️ **Pengaturan WiFi, Chat Setting, dan LCD Setting**
 - 🔗 **Koneksi MQTT** untuk sinkronisasi data dengan proyek **NAT lainnya** dalam ekosistem NALYTHA
+- ⏳ **Manajemen Task dengan FreeRTOS** untuk memastikan proses berjalan optimal tanpa menghambat kinerja utama.
 
 ---
 
@@ -52,16 +53,19 @@
    PubSubClient // Untuk MQTT
    Adafruit_AHT10
    Adafruit_BMP280
+   FreeRTOS
    ```
 2. **Sesuaikan Kode** dengan kredensial WiFi dan API cuaca jika diperlukan.
 3. **Konfigurasi MQTT** agar dapat terhubung dengan proyek **NAT lainnya**.
-4. **Upload kode ke ESP32-S3** dan pantau tampilan LCD.
+4. **Implementasikan Task Management menggunakan FreeRTOS** untuk meningkatkan performa sistem.
+5. **Upload kode ke ESP32-S3** dan pantau tampilan LCD.
 
 ### 3️⃣ **Navigasi dan Penggunaan**
 - Saat dinyalakan, LCD akan menampilkan data utama secara **real-time**.
 - Gunakan **touchscreen berbasis LVGL** untuk navigasi utama.
 - Mode **idle** akan otomatis aktif jika tidak ada interaksi.
 - Data dikirim dan diterima melalui **MQTT** untuk integrasi dengan perangkat lain dalam jaringan **NALYTHA**.
+- **FreeRTOS memastikan multitasking berjalan optimal** tanpa menghambat sensor atau tampilan LCD.
 
 ---
 
@@ -75,6 +79,7 @@ _(Tambahkan gambar tampilan LCD dan perangkat)_
 - [ ] Opsi **kalibrasi manual sensor**
 - [ ] Integrasi dengan **sistem smart home**
 - [ ] Pengembangan **sinkronisasi MQTT** yang lebih canggih
+- [ ] Optimasi **penggunaan FreeRTOS untuk pengelolaan task yang lebih baik**
 
 ---
 
